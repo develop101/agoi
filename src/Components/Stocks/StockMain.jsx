@@ -17,7 +17,7 @@ let StockMain = () => {
   // let [stampDuty, setStampDuty] = useState(1);
   let [txnFee, setTxnFee] = useState(1);
   let [noOfLots, setNoOfLots] = useState(0);
-  // let [initInv, setInitInv] = useState(1);
+  let [initInv, setInitInv] = useState(1);
   let [total, setTotal] = useState(0);
   // let [pricePerShare, setPricePerShare] = useState(0);
   let [disable, setDisable] = useState(false);
