@@ -1,6 +1,6 @@
 import Nav from "../Home/Nav/Nav";
 import "../../styles/Stocks/StockMain.css";
-// import {  useLocation, useNavigate } from "react-router";
+import {  useLocation, useNavigate } from "react-router";
 import { useEffect, useState } from "react";
 import Login from "../Login/Login";
 import { useSelector } from "react-redux";
@@ -17,7 +17,7 @@ let StockMain = () => {
   // let [stampDuty, setStampDuty] = useState(1);
   let [txnFee, setTxnFee] = useState(1);
   let [noOfLots, setNoOfLots] = useState(0);
-  let [initInv, setInitInv] = useState(1);
+  // let [initInv, setInitInv] = useState(1);
   let [total, setTotal] = useState(0);
   // let [pricePerShare, setPricePerShare] = useState(0);
   let [disable, setDisable] = useState(false);
