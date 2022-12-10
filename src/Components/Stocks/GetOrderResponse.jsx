@@ -1,13 +1,13 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
-import { useNavigate } from "react-router";
+import { useNavigate, useParams } from "react-router";
 import { useSearchParams } from "react-router-dom";
 import { BASE_URL } from "../../Constants/api_constants";
 import "../../styles/Stocks/GetOrderResponse.css";
 
-let GetOrderResponse = () => {
-  // let params = useParams();
+let GetOrderResponse = (param) => {
+  let params = useParams();
   let navigate = useNavigate();
   let searchParams = useSearchParams()[0];
   let [order, setOrder] = useState(null);
@@ -85,7 +85,7 @@ let GetOrderResponse = () => {
           <div className="img-res-container">
             <img
               src={
-                order.order_status === "PAID" ? "/suc_pay.png" : "/fail_pay.png"
+                order.order_status == "PAID" ? "/suc_pay.png" : "/fail_pay.png"
               }
               alt=""
             />

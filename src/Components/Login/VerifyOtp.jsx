@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import { useLocation, useParams } from "react-router-dom";
 import "../../styles/Login/VerifyOtp.css";
-import OTPInput from "otp-input-react";
+import OTPInput, { ResendOTP } from "otp-input-react";
 import { Navigate, useNavigate } from "react-router";
 import axios from "axios";
 import { BASE_URL } from "../../Constants/api_constants";
-// import { auth } from "../../firebase/firebase";
+import { auth } from "../../firebase/firebase";
 
 let VerifyOtp = (props) => {
   let location = useLocation();

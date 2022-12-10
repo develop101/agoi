@@ -7,8 +7,6 @@
  import { BASE_URL } from "../../Constants/api_constants";
  import "../../styles/Investment/SellStockModal.css";
 
-
-
  let Sell = ({ handleClose, open, fetchuser, walletBalance }) => {
    let [qty, setQty] = useState(0);
    let state = useSelector((state) => state);
@@ -114,7 +112,6 @@
              </div>
            </div>
          </div>
-      
        </Modal>
      </>
    );

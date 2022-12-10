@@ -73,7 +73,7 @@ let CompleteProfile = () => {
       };
 
 
-      var data = await axios.post(
+      let data = await axios.post(
         BASE_URL + "/user/complete-profile",
         requestBody
 
@@ -117,7 +117,7 @@ let CompleteProfile = () => {
         ) {
           if (!res.is_completed_profile)
             try {
-               data = await axios.post(BASE_URL + "/user/complete-profile", {
+              let data = await axios.post(BASE_URL + "/user/complete-profile", {
                 mobile_number: auth.currentUser.phoneNumber,
                 is_completed_profile: true,
               });

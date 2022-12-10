@@ -1,12 +1,12 @@
 import Nav from "../Home/Nav/Nav";
 import "../../styles/Investment/Investment.css";
-// import { useNavigate } from "react-router";
+import { useNavigate } from "react-router";
 import { useSelector } from "react-redux";
 import axios from "axios";
 import { BASE_URL } from "../../Constants/api_constants";
 import { useEffect, useState } from "react";
 import moment from "moment";
-// import userEvent from "@testing-library/user-event";
+import userEvent from "@testing-library/user-event";
 // import generatePDF from "./repGenerator";
 // import SellStocksModal from "./SellStocksModal";
 
@@ -15,13 +15,13 @@ import moment from "moment";
 
 
 let Cashouthistory = () => {
-  // let navigate = useNavigate();
+  let navigate = useNavigate();
   let state = useSelector((state) => state);
-  // let [open, setOpen] = useState(false);              
-  // let [modalItem, setModalItem] = useState(); 
+  let [open, setOpen] = useState(false);
+  let [modalItem, setModalItem] = useState();
   // let [order, setOrder] = useState([]);
   const [cashout, setCashout] = useState([])
-  // const [user, setUser] = useState([])
+  const [user, setUser] = useState([])
 
   let fetchcash = async () => {
     // handleClose();
@@ -52,14 +52,14 @@ let Cashouthistory = () => {
 
 
 
-  // let handleOpen = (item) => {
-  //   setModalItem(item);
-  //   setOpen(true);
-  // };
+  let handleOpen = (item) => {
+    setModalItem(item);
+    setOpen(true);
+  };
 
-  // let handleClose = () => {
-  //   setOpen(false);
-  // };
+  let handleClose = () => {
+    setOpen(false);
+  };
 
   useEffect(() => {
     fetchcash();
