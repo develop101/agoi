@@ -8,7 +8,7 @@ import { useSelector } from "react-redux";
 import Home from "../Home/Home";
 
 let Login = () => {
-  const [selected, setSelected] = useState("IN");
+  // const [selected, setSelected] = useState("IN");
   const [phoneNum, setPhoneNum] = useState("");
   const [hasReferral, setHasReferral] = useState(false);
   const [referral, setReferral] = useState("");

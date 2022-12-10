@@ -1,13 +1,8 @@
 import { Modal } from "@mui/material";
-import axios from "axios";
-import { useEffect } from "react";
-import { useState } from "react";
-import { useSelector } from "react-redux";
-import { useToasts } from "react-toast-notifications";
-import { BASE_URL } from "../../Constants/api_constants";
+
 import "../../../src/styles/Investment/Investment.css";
 
-let Ping = ({ handleCloses, open,counts,fetchuser}) => {
+let Ping = ({ handleCloses, open,counts}) => {
  
 
 
