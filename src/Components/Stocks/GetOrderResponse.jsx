@@ -6,8 +6,8 @@ import { useSearchParams } from "react-router-dom";
 import { BASE_URL } from "../../Constants/api_constants";
 import "../../styles/Stocks/GetOrderResponse.css";
 
-let GetOrderResponse = (param) => {
-  let params = useParams();
+let GetOrderResponse = () => {
+  // let params = useParams();
   let navigate = useNavigate();
   let searchParams = useSearchParams()[0];
   let [order, setOrder] = useState(null);
