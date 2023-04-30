@@ -1,16 +1,14 @@
-
-
-
+/*navbar main container*/
 .navbar{
-    position: sticky;
-    top: 0;
+    /* position: sticky; */
+    /* top: 0;
     left: 0;
-    right: 0;
-    height: 70px;
+    right: 0; */
+    /* height: 60px; */
     background: var(--home-gray);
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    /* align-items: center; */
     color: white;
     font-size: 14px;
     z-index: 9999;
