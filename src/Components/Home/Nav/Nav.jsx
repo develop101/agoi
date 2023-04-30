@@ -213,7 +213,8 @@ let Nav = () => {
  
         
 
-     <div className="fcontainer">
+     {/* commited 
+      <div className="fcontainer">
 
           <div className="f" >   <a id="i" href="#"> <CallIcon />-21324334</a></div>
         <div className="fitem item1">    <a id="i" href="https://www.facebook.com/">
@@ -232,7 +233,7 @@ let Nav = () => {
      />
    </a></div>
        
-    </div>
+    </div> */}
    
 
       <div className="navbar">
