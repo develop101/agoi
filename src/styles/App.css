@@ -2,7 +2,7 @@
 
 
 :root{
-    --home-gray : #202933;
+    --home-gray : white;
     --home-heading-font-family : 'Nanum Gothic', sans-serif;
     --white-font : white;
     --ani-delay : 0s;
