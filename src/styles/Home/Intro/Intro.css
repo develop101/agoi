@@ -537,7 +537,7 @@
     font-family: 'Bree Serif', serif;
     font-size: 54px;
     display: flex;
-    text-align: center;
+    
     /* padding: 0px; */
 }
 
@@ -856,10 +856,10 @@
 #hom{
     display: flex;
     flex-direction: column;
-    padding:3px 200px;
+    padding:0px 200px 0px 90px;
     height: 550px;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 #hom::before{ 
@@ -875,9 +875,7 @@
 }
 
 #hom h1{
-    color:white;
-    /* text-align: center; */
-    /* font-family: 'Bree Serif', serif; */
+    color:black;
 }
 
 /* #hom p{

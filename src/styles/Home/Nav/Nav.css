@@ -1,5 +1,6 @@
 /*navbar main container*/
 .navbar{
+    justify-content: space-between;
     /* position: sticky; */
     /* top: 0;
     left: 0;
@@ -38,7 +39,6 @@
 
     justify-content: flex-end;
     list-style: none;
-    width: 75%;
 }
 
 
@@ -571,7 +571,7 @@ a{
     
      .logo { 
         font-size: 1px !important;
-        color: aliceblue;
+        color: rgb(0, 0, 0);
     }
 }
     /*
