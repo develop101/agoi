@@ -669,14 +669,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--white-font);
+    color: black;
+    background-color: var(--home-gray);
 
 }
 
 .df{
-    color: white;
+    color: black;
     padding-left: 30px;
     margin-bottom:33px ;
+    background-color: var(--home-gray);
    
     
 }
@@ -699,7 +701,8 @@
     text-align: justify;
     color: var(--color-light-grey);
     font-size: 14px;
-    
+    background-color: var(--home-gray);
+    color: black;
     padding: 0 6rem;
 }
 
@@ -709,16 +712,17 @@
     border-top: 3px solid #407bff;
     width: 100%;
     text-align: justify;
-    color: var(--color-light-grey);
+    color: black;
     font-size: 14px;
-    background: radial-gradient(ellipse at bottom,rgba(23,31,42,255) 30%,  #202933 80%);
+    background-color: var(--home-gray);
     padding: 0 6rem;
 }
 
 .section{
     padding: 0 6rem;
     padding-top: 94px;
-    color: white;
+    color: black;
+    background-color: var(--home-gray);
     min-height: 580px;
 }
 
