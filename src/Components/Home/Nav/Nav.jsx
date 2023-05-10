@@ -210,42 +210,25 @@ let Nav = () => {
       fetchuser={fetchuser}
       counts={counts}
   />
- 
-        
 
-     {/* commited 
-      <div className="fcontainer">
-
-          <div className="f" >   <a id="i" href="#"> <CallIcon />-21324334</a></div>
-        <div className="fitem item1">    <a id="i" href="https://www.facebook.com/">
-          <FacebookIcon
-          />
-        </a></div>
-        <div className="fitem item1">  <a  id="i" href="https://www.instagram.com">
-          <InstagramIcon
-         
-          />
-        </a></div>
-        <div className="fitem item3">  <a id="i" href="https://twitter.com/">
-     
-     <YouTubeIcon
-       
-     />
-   </a></div>
-       
-    </div> */}
    
-
+ {/* Nav bar START*/}
       <div className="navbar">
-        {/* <GiHamburgerMenu className="burger"
-          onClick={() => setOpen(!open)} /> */}
-        {/* <div className="logo"> */}
+        {/* logo*/}
           <p >
             <Link id="idea" to={"/"}>Agoi Financial Services</Link>
-            {/* {state.usernotifications.user_id} */}
-            {/* &#8377; {state.wallet_balance} */}
-          </p>         
-
+          </p>  
+         
+ {/* NavLinks*/}
+<div >
+  <ul id="navlink">
+    <li><a className="active" href="/">Home</a></li>
+    <li><a href="/">Blog</a></li>
+    <li><a href="/">About</a></li>
+    <li><a href="/">Service</a></li>
+    <li><a href="/">Contact</a></li>
+  </ul>
+</div>
 
         {/* </div> */}
 
