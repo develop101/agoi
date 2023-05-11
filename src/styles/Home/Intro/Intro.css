@@ -567,8 +567,53 @@
     text-align: center;
 }
 
+/* SECTION 2 START */
+#section2heading{
+    text-align: center;
+    font-weight: bold;
+}
+#section2headingName{
+    color: green;
+}
+#section2subHeading{
+    text-align: center;
+    font-weight: bold;
+}
+#sub-heading-line{
+    border: 3px solid green;
+    border-radius: 50px;
+    width: 15%;
+    margin: auto;
+    margin-top: 21px;
+    margin-bottom: 30px;
+}
+#description{
+    text-align: center;
+    padding-bottom: 5%;
+}
 
+#grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: 1;
+    justify-content: center;
+    justify-items: center;
+  }
+  
+  #item1 {
+   
+  }
+  
+  #item2 {
+   
+  }
+  
+  #item3 {
+   
+  }
+  
 
+/*SECTION 2 END*/
 
 .info-card .add-btn{
     position: absolute;
@@ -733,7 +778,7 @@
 
 .img-cont-home .img-cont-home-in, .img-cont-home-in img{
     user-select: none;
-    position: absolute;
+    /* position: absolute; */
     height: 160px;
     width: 150px;
     border-radius: 22px;

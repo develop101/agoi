@@ -1,7 +1,3 @@
-// // UI  improvement
-
-
-
 import { useState } from "react";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router";
@@ -9,26 +5,22 @@ import "../../../styles/Home/Intro/Intro.css";
 import InfoCardModal from "./InfoCardModal";
 import ReferralCardModal from "./ReferralModel";
 import Slider from "./Slider";
-// import Photo from "../../../../public/"
 
 let Intro = () => {
   let state = useSelector((state) => state);
   let [open, setOpen] = useState(false);
   let navigate = useNavigate();
   let [openReferral, setOpenReferral] = useState(false);
+
   let handleOpenReferral = () => {
     setOpenReferral(true);
   };
   let handleCloseReferral = () => {
     setOpenReferral(false);
   };
-
   let handleClose = () => {
     setOpen(false);
   };
-  console.log(state);
-
-  
 
   return (
     <>
@@ -38,38 +30,40 @@ let Intro = () => {
       />
       <InfoCardModal handleClose={handleClose} open={open} />
 
-      {/* <div className="home-notice">You are not varified by Admin Yet</div> */}
       <div className="landing-page">
+        <section id="hom">
+          <h1 className="h-primary">
+            Invest in India's leading private growth companies
+          </h1>
+          <p>
+            {" "}
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim
+            voluptates ex, quam fuga ab modi{" "}
+          </p>
 
- {/* <div className="con1"> */}
+          <button onClick={() => navigate("/login")} class="btns">
+            StartNow
+          </button>
+        </section>
 
-      <section id="hom">
-        <h1 className="h-primary">Invest in India's leading  private  growth companies</h1>
-      
-        <button onClick={() => navigate("/login")} class="btns">StartNow</button>
-    </section>
-       
-        {/* </div> */}
- 
-
-
-
-        <div className="section section-basic-components">
-          <div className="row">
-            <div className="ml-auto mr-auto col-md-7 col-lg-5">
-              <h1 className="title">Make Investments</h1>
-              <h5 className="category text-primary">
-                <strong>Do safe Investments</strong>
-              </h5>
-              <p className="description mt-5">
-                We re styled your way of investment by providing a modern
-                platform. Use Agoi Investment Services for better investment and
+      <div className="section section-basic-components">
+        <p id="section2heading">WELCOME TO <span id="section2headingName">AGOI FINANCIAL SERVICE</span></p>
+        <h1 id="section2subHeading">Make Investments, <br /> Do safe Investments</h1>
+        <hr id="sub-heading-line" />
+        <p id="description">  We re styled your way of investment by providing a modern
+                platform. Use Agoi Investment Services for better investment and <br />
                 keep track of your investments. Do Investments of your
-                suitablity and your convenience.
-              </p>
-            </div>
+                suitablity and your convenience. </p>
+
+        <div id="grid">
+          <div id="item1" className="img-cont-home-in"><img src="img_1.png" /></div>
+          <div id="item2" className="img-cont-home-in"><img src="img_2.png" /></div>
+          <div id="item3" className="img-cont-home-in"><img src="img_3.png" /></div>
+        </div>
+
+
+         {/* <div className="row">
             <div className="img-cont-home col-md-12 col-lg-6">
-            {/* <div className="hero"> */}
               <div className="img-cont-home-in">
                 <img src="img_1.png" />
               </div>
@@ -80,64 +74,18 @@ let Intro = () => {
                 <img src="img_3.png" />
               </div>
             </div>
-            {/* </div> */}
-          </div>
+          </div>  */}
         </div>
-        <div className="df"><h2>Available Stocks</h2>
 
-
+        <div className="df">
+          <h2>Available Stocks</h2>
         </div>
-        <div className="home-footers">
+        <div className="home-footers"></div>
 
-        </div>
-       
         <Slider />
 
-       
-
-
-
-{/* 
-<div className="df"><h2>Our Best 
-  Workers </h2>
-  
-</div>
-  <div className="home-footers">
-
-
-  
-</div>
-
-
-  <div className="con3">
-      <img
-        className="ima"
-     src="https://images-cdn.9gag.com/images/thumbnail-facebook/27361130_1469416860.0675_aZE6yP_n.jpg"
-     />
-  
-    
-<img
-        className="ima"
-     src="  https://fashionista.com/.image/t_share/MTMwNjM1MTYxMjkyMjk0MTU0/rob-lowe-image-2jpg.jpg
-     "
-  />
-
-  </div> */}
-
-
-
-
-
-
-        <div className="home-footers">
-
-
-        </div>
+        <div className="home-footers"></div>
         <div className="start-investment-cont">
-
-
-          
-          
           <div className="col-6">
             <h3>Thanks for visiting us</h3>
             <p>Let's get in touch with us on any of these properties.</p>
@@ -155,19 +103,18 @@ let Intro = () => {
           </div>
         </div>
         <div className="d-flex flex-column justify-content-center align-items-center referral-container">
-
           {!state || !state.multiFactor || !state.multiFactor.user ? (
-          ""
-        ) : (
-          <>
-          <div className="col-12 d-flex justify-content-center align-items-center">
-            <p>Refer a Friend</p>
-          </div>
-          <div className="referral-code-container-home">{state.referral_code }</div>
-          </>
-
-        )}
-
+            ""
+          ) : (
+            <>
+              <div className="col-12 d-flex justify-content-center align-items-center">
+                <p>Refer a Friend</p>
+              </div>
+              <div className="referral-code-container-home">
+                {state.referral_code}
+              </div>
+            </>
+          )}
         </div>
         <div className="home-footer">
           <div className="copyright-cont">
