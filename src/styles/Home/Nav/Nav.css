@@ -440,15 +440,14 @@ a{
 
 .login-link{
     outline: none;
-    color: var(--white-font);
     text-decoration: none;
 }
 
 .login-container{
     width: 100px !important;
-    padding: 7px 10px 7px 10px;
+    padding: 10px 99px 7px 10px;
     text-align: center;
-    border: 1px solid white;
+    border: 3px solid green;
     cursor: pointer;
     border-radius: 25px;
 }
@@ -460,7 +459,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid white;
+    border: 30px solid rgb(43, 255, 0);
     cursor: pointer;
     background: white;
     border-radius: 25px;

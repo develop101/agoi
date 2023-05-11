@@ -909,6 +909,6 @@
 
 }
 .h-primary:hover{
-    animation: shake 2s;
+    /* animation: shake 2s; */
     animation-iteration-count: infinite;
 }
