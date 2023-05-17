@@ -5,7 +5,7 @@ import "../../../styles/Home/Intro/Intro.css";
 import InfoCardModal from "./InfoCardModal";
 import ReferralCardModal from "./ReferralModel";
 import Slider from "./Slider";
-
+import Section2Footer from "./subHomeComponet/section2footer";
 let Intro = () => {
   let state = useSelector((state) => state);
   let [open, setOpen] = useState(false);
@@ -29,7 +29,7 @@ let Intro = () => {
         open={openReferral}
       />
       <InfoCardModal handleClose={handleClose} open={open} />
-
+      
       <div className="landing-page">
         <section id="hom">
           <h1 className="h-primary">
@@ -46,40 +46,40 @@ let Intro = () => {
           </button>
         </section>
 
-      <div className="section section-basic-components">
-        <p id="section2heading">WELCOME TO <span id="section2headingName">AGOI FINANCIAL SERVICE</span></p>
-        <h1 id="section2subHeading">Make Investments, <br /> Do safe Investments</h1>
-        <hr id="sub-heading-line" />
-        <p id="description">  We re styled your way of investment by providing a modern
-                platform. Use Agoi Investment Services for better investment and <br />
-                keep track of your investments. Do Investments of your
-                suitablity and your convenience. </p>
+        <div className="section section-basic-components">
+          <p id="section2heading">
+            WELCOME TO{" "}
+            <span id="section2headingName">AGOI FINANCIAL SERVICE</span>
+          </p>
+          <h1 id="section2subHeading">
+            Make Investments, <br /> Do safe Investments
+          </h1>
+          <hr id="sub-heading-line" />
+          <p id="description">
+            {" "}
+            We re styled your way of investment by providing a modern platform.
+            Use Agoi Investment Services for better investment and <br />
+            keep track of your investments. Do Investments of your suitablity
+            and your convenience.{" "}
+          </p>
 
-        <div id="grid">
-          <div id="item1" className="img-cont-home-in"><img src="img_1.png" /></div>
-          <div id="item2" className="img-cont-home-in"><img src="img_2.png" /></div>
-          <div id="item3" className="img-cont-home-in"><img src="img_3.png" /></div>
-        </div>
-
-
-         {/* <div className="row">
-            <div className="img-cont-home col-md-12 col-lg-6">
-              <div className="img-cont-home-in">
-                <img src="img_1.png" />
-              </div>
-              <div className="img-cont-home-in">
-                <img src="img_2.png" />
-              </div>
-              <div className="img-cont-home-in">
-                <img src="img_3.png" />
-              </div>
+          <div id="grid">
+            <div id="item1" className="img-cont-home-in">
+              <img src="img_1.png" />
             </div>
-          </div>  */}
+            <div id="item2" className="img-cont-home-in">
+              <img src="img_2.png" />
+            </div>
+            <div id="item3" className="img-cont-home-in">
+              <img src="img_3.png" />
+            </div>
+          </div>
         </div>
-
-        <div className="df">
+      
+        <Section2Footer />
+        {/* <div className="df">
           <h2>Available Stocks</h2>
-        </div>
+        </div> */}
         <div className="home-footers"></div>
 
         <Slider />
@@ -158,26 +158,6 @@ let Intro = () => {
 
 export default Intro;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // import { useState } from "react";
 // import { useSelector } from "react-redux";
 // import { useNavigate } from "react-router";
@@ -204,8 +184,6 @@ export default Intro;
 //   };
 //   console.log(state);
 
-  
-
 //   return (
 //     <>
 //       <ReferralCardModal
@@ -229,17 +207,13 @@ export default Intro;
 //                growth companies
 //             </p></div>
 
-
-
-      
 //           <div className="heading-btns">
-           
-    
+
 //             <button onClick={() => navigate("/login")} className="acc-btn">
 //                Start Now
 //               </button>
 //           </div>
-//         </div> 
+//         </div>
 
 // {/* <div className="container">
 //   <img  className="im" src="https://blogs.idc.com/wp-content/uploads/2022/07/pexels-artem-podrez-5716016-3.jpg" />
@@ -279,33 +253,27 @@ export default Intro;
 //         </div>
 //         <div className="df"><h2>Available Stocks</h2>
 
-
 //         </div>
 //         <div className="home-footers">
 
 //         </div>
-       
+
 //         <Slider />
 
-       
-
-
-
-// {/* 
-// <div className="df"><h2>Our Best 
+// {/*
+// <div className="df"><h2>Our Best
 //   Workers </h2>
-  
+
 // </div>
 //   <div className="home-footers">
-  
+
 // </div>
 //   <div className="con3">
 //       <img
 //         className="ima"
 //      src="https://images-cdn.9gag.com/images/thumbnail-facebook/27361130_1469416860.0675_aZE6yP_n.jpg"
 //      />
-  
-    
+
 // <img
 //         className="ima"
 //      src="  https://fashionista.com/.image/t_share/MTMwNjM1MTYxMjkyMjk0MTU0/rob-lowe-image-2jpg.jpg
@@ -313,20 +281,11 @@ export default Intro;
 //   />
 //   </div> */}
 
-
-
-
-
-
 //         <div className="home-footers">
-
 
 //         </div>
 //         <div className=" start-investment-cont">
 
-
-          
-          
 //           <div className="col-6">
 //             <h3>Thanks for visiting us</h3>
 //             <p>Let's get in touch with us on any of these properties.</p>
